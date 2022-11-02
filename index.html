@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <title>ViaCEP</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <head>
+        <nav class="navbar navbar-light" id="header"> 
+            <div id="logo">
+                <a class="navbar-brand" href="#">
+                    <img id="img-logo" src="assets/logo.png" alt="">
+                  </a>
+            </div>
+            <div id="texto">
+                <span id="header-text">Consulte CEPs de todo o Brasil</span>
+            </div>
+          </nav>
+          <div id="yellow-line"></div>       
+    </head>
+    <section>
+        <div class="container">
+        <div class="card" id="card">
+            <div class="card-header" id="card-header">
+                <h5 class="card-title">Consulta CEP</h5>
+            </div>
+            <div class="card-body" id="card-body">
+                <form method="get" action=".">
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">CEP</label>
+                        <input type="text" class="form-control" name="cep" id="cep">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Rua</label>
+                      <input type="" class="form-control" id="rua" name="rua">
+                    </div>
+            
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Bairro</label>
+                        <input type="text" class="form-control" name="bairro" id="bairro">
+                      </div>
+                    
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" class="form-control" name="cidade" id="cidade">
+                      </div>
+                    
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Estado</label>
+                        <input type="text" class="form-control" id="uf" name="uf">
+                      </div>
+                    
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">IBGE</label>
+                        <input type="text" class="form-control" name="ibge" id="ibge"> 
+                      </div>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>  
+    </section>
+</body>
+</html>
